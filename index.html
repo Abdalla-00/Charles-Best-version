@@ -18,35 +18,35 @@
   <body>
     <section id="navbar">
       <div
-        class="flex flex-col md:justify-between md:px-16 py-10 md:flex-row justify-center items-center "
+        class="flex flex-col md:justify-between md:px-16 md:py-10 py-8 md:flex-row justify-center items-center "
       >
         <img class="h-[60px]" src="./image/logo/asset 0.png" alt="" />
         <div class="flex gap-12">
-          <div class="invisible md:visible flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-3">
             <i class="fa-solid fa-location-dot text-4xl text-[#001A57]"></i>
             <div class="">
               <h1 class="text-lg text-gray-800">Address:</h1>
               <p class="text-lg text-gray-600">2A0, Queenstown St, USA.</p>
             </div>
           </div>
-          <div class="invisible md:visible h-10 w-[1px] bg-gray-200"></div>
-          <div class="flex items-center gap-3 invisible md:visible">
+          <div class="hidden md:block h-10 w-[1px] bg-gray-200"></div>
+          <div class="hidden md:flex items-center gap-3 ">
             <i class="fa-regular fa-envelope-open text-4xl text-[#001A57]"></i>
-            <div>
+            <div class="hidden md:block">
               <h1 class="text-lg text-gray-800">Mail us:</h1>
               <p class="text-lg text-gray-600">supporthere@mail.com</p>
             </div>
           </div>
 
           <button
-            class="bg-transparent border-2 border-[#001A57] rounded-[5px] px-5 py-1 hover:bg-[#001A57] transition cursor-pointer hover:text-white font-medium invisible md:visible"
+            class="hidden md:block bg-transparent border-2 border-[#001A57] rounded-[5px] px-5 py-1 hover:bg-[#001A57] transition cursor-pointer hover:text-white font-medium "
           >
             GET A QUOTES
           </button>
         </div>
       </div>
 
-      <div id="navbar" class=" bg-[#000F32] px-[40px] py-[25px] md:w-[90%] mx-auto text-white relative">
+      <div id="navbar" class=" bg-[#000F32] px-[40px] md:py-[25px] py-[20px] md:w-[90%] mx-auto  text-white relative">
         <div class="flex justify-between gap-6 items-center  relative">
           <ul class="hidden md:flex gap-6 ">
             <li class="text-white cursor-pointer">HOME</li>
@@ -75,9 +75,10 @@
           </div>
           
         </div>
-         <div class="w-[1px] h-[65px] md:h-[73px] bg-gray-700  absolute  right-[70px] top-[0.5px] "></div>
-         <div class="w-[1px] h-[65px] md:h-[73px] bg-gray-700  absolute  right-[130px] top-[0.5px] "></div>
+         <div class="w-[1px] h-[59px] md:h-[73px] bg-gray-700  absolute  right-[70px] top-[0.5px] "></div>
+         <div class="w-[1px] h-[59px] md:h-[73px] bg-gray-700  absolute  right-[130px] top-[0.5px] "></div>
       </div>
     </section>
+    <section id="hero" class="bg-gray-200 h-[100vh]"></section>
   </body>
 </html>
