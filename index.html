@@ -18,7 +18,7 @@
   <body>
     <section id="navbar">
       <div
-        class="flex flex-col md:justify-between md:px-16 md:py-10 py-8 md:flex-row justify-center items-center "
+        class="flex flex-col md:justify-between md:px-16 md:py-10 py-8 md:flex-row justify-center items-center"
       >
         <img class="h-[60px]" src="./image/logo/asset 0.png" alt="" />
         <div class="flex gap-12">
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="hidden md:block h-10 w-[1px] bg-gray-200"></div>
-          <div class="hidden md:flex items-center gap-3 ">
+          <div class="hidden md:flex items-center gap-3">
             <i class="fa-regular fa-envelope-open text-4xl text-[#001A57]"></i>
             <div class="hidden md:block">
               <h1 class="text-lg text-gray-800">Mail us:</h1>
@@ -39,67 +39,132 @@
           </div>
 
           <button
-            class="hidden md:block bg-transparent border-2 border-[#001A57] rounded-[5px] px-5 py-1 hover:bg-[#001A57] transition cursor-pointer hover:text-white font-medium "
+            class="hidden md:block bg-transparent border-2 border-[#001A57] rounded-[5px] px-5 py-1 hover:bg-[#001A57] transition cursor-pointer hover:text-white font-medium"
           >
             GET A QUOTES
           </button>
         </div>
       </div>
 
-      <div id="navbar" class=" bg-[#000F32] px-[40px] md:py-[25px] py-[20px] md:w-[90%] mx-auto  text-white relative">
-        <div class="flex justify-between gap-6 items-center  relative">
-          <ul class="hidden md:flex gap-6 ">
+      <div
+        id="navbar-linear"
+        class="bg-[#000F32] px-[40px] md:py-[25px] py-[20px] md:w-[90%] mx-auto text-white relative"
+      >
+        <div class="flex justify-between gap-6 items-center relative">
+          <ul class="hidden md:flex gap-6">
             <li class="text-white cursor-pointer">HOME</li>
             <div>/</div>
             <li class="text-gray-400 hover:text-white cursor-pointer">PAGE</li>
-             <div>/</div>
-            <li class="text-gray-400 hover:text-white cursor-pointer">SERVICE</li>
             <div>/</div>
-            <li class="text-gray-400 hover:text-white cursor-pointer">PORTOFOLIS</li>
+            <li class="text-gray-400 hover:text-white cursor-pointer">
+              SERVICE
+            </li>
+            <div>/</div>
+            <li class="text-gray-400 hover:text-white cursor-pointer">
+              PORTOFOLIS
+            </li>
             <div>/</div>
             <li class="text-gray-400 hover:text-white cursor-pointer">BLOG</li>
             <div>/</div>
-            <li class="text-gray-400 hover:text-white cursor-pointer">CONTACT</li>
+            <li class="text-gray-400 hover:text-white cursor-pointer">
+              CONTACT
+            </li>
           </ul>
-          <ul id="menu" class=" hidden flex-col gap-6 bg-white w-[100%] justify-center absolute top-[40px] font-medium py-2 ">
+          <ul
+            id="menu"
+            class="flex-col gap-6 bg-white w-[100%] justify-center absolute top-[40px] font-medium py-2 Z-50"
+          >
             <li class="text-[#001A57] cursor-pointer ml-3">HOME</li>
             <div class="">/</div>
-            <li class="text-gray-600  hover:text-[#001A57] cursor-pointer ml-3">PAGE</li>
-             <div>/</div>
-            <li class="text-gray-600  hover:text-[#001A57] cursor-pointer ml-3">SERVICE</li>
+            <li class="text-gray-600 hover:text-[#001A57] cursor-pointer ml-3">
+              PAGE
+            </li>
             <div>/</div>
-            <li class="text-gray-600  hover:text-[#001A57] cursor-pointer ml-3">PORTOFOLIS</li>
+            <li class="text-gray-600 hover:text-[#001A57] cursor-pointer ml-3">
+              SERVICE
+            </li>
             <div>/</div>
-            <li class="text-gray-600  hover:text-[#001A57] cursor-pointer ml-3">BLOG</li>
+            <li class="text-gray-600 hover:text-[#001A57] cursor-pointer ml-3">
+              PORTOFOLIS
+            </li>
             <div>/</div>
-            <li class="text-gray-600  hover:text-[#001A57] cursor-pointer ml-3">CONTACT</li>
+            <li class="text-gray-600 hover:text-[#001A57] cursor-pointer ml-3">
+              BLOG
+            </li>
+            <div>/</div>
+            <li class="text-gray-600 hover:text-[#001A57] cursor-pointer ml-3">
+              CONTACT
+            </li>
           </ul>
-          <i id="menuIcon" class="fa-solid fa-bars visible md:invisible text-xl cursor-pointer"></i>
-          <div id="socailIcon" class="flex gap-3 text-[13px] absolute right-[110px] text-gray-200 hover:text-white cursor-pointer">
+          <i
+            id="menuIcon"
+            class="fa-solid fa-bars visible md:invisible text-xl cursor-pointer"
+          ></i>
+          <div
+            id="socailIcon"
+            class="flex gap-3 text-[13px] absolute right-[110px] text-gray-200 hover:text-white cursor-pointer"
+          >
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-linkedin-in"></i>
             <i class="fa-brands fa-pinterest"></i>
           </div>
-         
+
           <div id="cartIcon" class="flex gap-7">
-             <i class="fa-solid fa-cart-shopping "></i>
-             <i class="fa-solid fa-magnifying-glass "></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          
         </div>
-         <div class="w-[1px] h-[59px] md:h-[73px] bg-gray-700  absolute  right-[70px] top-[0.5px] "></div>
-         <div class="w-[1px] h-[59px] md:h-[73px] bg-gray-700  absolute  right-[130px] top-[0.5px] "></div>
+        <div
+          class="w-[1px] h-[59px] md:h-[73px] bg-gray-700 absolute right-[70px] top-[0.5px]"
+        ></div>
+        <div
+          class="w-[1px] h-[59px] md:h-[73px] bg-gray-700 absolute right-[130px] top-[0.5px]"
+        ></div>
       </div>
     </section>
-    <section id="hero" class="bg-gray-200 h-[100vh] bg-[url('/image/hero-image/asset 1.jpeg')]
- bg-cover">
-      
-    </section>
-    
-      <div>
-        <h1></h1>
+    <section
+      id="hero"
+      class="bg-gray-200 h-[60vh] md:h-[100vh] bg-[url('/image/hero-image/asset-1.jpeg')] bg-cover bg-center relative"
+    >
+      <div
+        class="flex-col space-y-5 md:space-y-9 absolute md:top-[190px] md:left-[60px] top-[90px] left-[20px]"
+      >
+        <p class="md:text-2xl font-light text-[#001A57]">
+          The government they survive artical of fortune
+        </p>
+        <h2 class="text-4xl md:text-6xl font-bold text-[#001A57]">
+          We IMPROVE YOUR <br />
+          SALES EFFICIENCY
+        </h2>
+        <button
+          class="bg-white hover:bg-[#001A57] px-8 py-3 text-[#001A57] hover:text-white transition cursor-pointer rounded-lg"
+        >
+          CONTACT US
+        </button>
       </div>
+    </section>
+
+    <section id="goal" class="mt-5 mb-14">
+      <div class="py-4 px-7">
+        <div class="grid grid-cols-3">
+          <div
+            class="bg-white w-[300px] h-[300px] shadow-md rounded-md flex flex-col items-center justify-center text-center p-4"
+          >
+            <img
+              src="./image/service-icon/asset 4.png"
+              alt="Handshake Icon"
+              class="w-24 h-24 mb-4"
+            />
+            <h2 class="text-xl font-bold mb-2">Consumer Insight</h2>
+            <hr class="w-9 border-t-4 border-gray-300 my-2 rounded-2xl" />
+            <p class="text-gray-600">
+              the east side to adeluxe apartment in move on up to the east side
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="main.js"></script>
   </body>
