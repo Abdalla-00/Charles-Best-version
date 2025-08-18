@@ -548,6 +548,9 @@
   .text-\[19px\] {
     font-size: 19px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[40px\] {
     font-size: 40px;
   }
@@ -705,6 +708,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
     }
   }
   .md\:flex-row {
