@@ -3,3 +3,9 @@
 /* #hero{
     background-image: url(../image/hero-image/asset\ 1.jpeg);
 } */
+
+
+
+#card:hover h1{
+    color: #001A57;
+}
