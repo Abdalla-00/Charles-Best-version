@@ -486,18 +486,36 @@
       </div>
     </section>
 
-    <section class="">
-      <div
-        class="h-[60vh] md:h-[100vh] bg-[url('/image/map_pattener/1.1.png')] bg-no-repeat bg-center bg-contain"
-      >
-        <div class="h-[60vh] md:h-[100vh] bg-white/65"></div>
-        <div class="flex f">
-          <p>Company Success</p>
-          <h1>Some fun facts about our consulting</h1>
+   <section class="relative h-[60vh] md:h-[100vh] mt-20">
+      <div class="absolute inset-0 bg-[url('/image/map_pattener/1.1.png')] bg-no-repeat bg-center bg-contain"></div>
+        <div class=" absolute inset-0  bg-white/65"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full ">
+          <p class="text-2xl">Company Success</p>
+          <h1 class="text-4xl">Some fun facts about our consulting</h1>
+          
+          <div class="flex gap-20 mt-7 text-center">
+              <div>
+                  <h1>30+</h1>
+                  <p>Years of Excellence</p>
+              </div>
+              <div>
+                  <h1>100%</h1>
+                  <p>Client Satisfaction</p>
+              </div>
+              <div>
+                  <h1>53k</h1>
+                  <p>YCases Completed</p>
+              </div>
+              <div>
+                  <h1>24</h1>
+                  <p>Consultants</p>
+              </div>
+          </div>
+          <button class="mt-16">VIEW CASE STUDIES</button>
         </div>
-      </div>
     </section>
 
     <script src="main.js"></script>
   </body>
 </html>
+
