@@ -259,6 +259,9 @@
   .z-50 {
     z-index: 50;
   }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -367,6 +370,9 @@
   .h-\[300px\] {
     height: 300px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -464,6 +470,9 @@
   .flex-row {
     flex-direction: row;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -490,6 +499,9 @@
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
@@ -653,6 +665,9 @@
   .p-\[28px\] {
     padding: 28px;
   }
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -674,8 +689,32 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
+  .px-16 {
+    padding-inline: calc(var(--spacing) * 16);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
   .px-\[40px\] {
     padding-inline: 40px;
+  }
+  .px-\[70px\] {
+    padding-inline: 70px;
+  }
+  .px-\[75px\] {
+    padding-inline: 75px;
+  }
+  .px-\[80px\] {
+    padding-inline: 80px;
+  }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
+  .px-\[px\] {
+    padding-inline: px;
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -932,6 +971,21 @@
       left: 60px;
     }
   }
+  .md\:m-0 {
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mb-0 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mb-\[100px\] {
     @media (width >= 48rem) {
       margin-bottom: 100px;
@@ -1032,6 +1086,11 @@
       flex-direction: row;
     }
   }
+  .md\:flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
@@ -1040,6 +1099,11 @@
   .md\:gap-0 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:gap-20 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .md\:gap-40 {
