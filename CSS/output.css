@@ -1179,6 +1179,9 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-\[20px\] {
     padding-block: 20px;
   }
@@ -1326,6 +1329,9 @@
   .text-\[\#9C928D\] {
     color: #9C928D;
   }
+  .text-\[\#001138\] {
+    color: #001138;
+  }
   .text-\[\#232323\] {
     color: #232323;
   }
@@ -1427,6 +1433,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: #001A57;
+      }
+    }
+  }
+  .hover\:bg-\[\#001138\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #001138;
       }
     }
   }
