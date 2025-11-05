@@ -516,6 +516,13 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-3 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -549,6 +556,13 @@
       --tw-space-y-reverse: 0;
       margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
       margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-\[1px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(1px * var(--tw-space-y-reverse));
+      margin-block-end: calc(1px * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .gap-y-2 {
@@ -1140,6 +1154,11 @@
   .md\:gap-0 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:gap-3 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 3);
     }
   }
   .md\:gap-5 {
