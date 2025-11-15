@@ -28,6 +28,51 @@ const Cards = [
   },
 ];
 
+
+const Card2 = [
+  {
+    image: "./image/Service-image/asset 9.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+  {
+    image: "./image/Service-image/asset 10.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+  {
+    image: "./image/Service-image/asset 11.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+  {
+    image: "./image/Service-image/asset 12.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+  {
+    image: "./image/Service-image/asset 13.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+  {
+    image: "./image/Service-image/asset 14.jpeg",
+    service: "Business Services",
+    description: "The tiny ship today stille",
+    More: "READ MORE>"
+  },
+]
+
+console.log(Card2)
+
+
+
+const serverce = document.getElementById("serverce");
 const Products = document.getElementById("Products");
 
 const ShowProduct = () => {
@@ -44,6 +89,67 @@ const ShowProduct = () => {
 
     Products.innerHTML += ProductHtml;
   });
+
+
+  Card2.map((product)=>{
+    const ProduHtml = ` <div
+          id="card"
+          class="flex gap-5 bg-white shadow hover:shadow-lg cursor-pointer rounded-lg transition"
+        >
+          <img
+            src="${product.image}"
+            class="h-full object-cover"
+            alt=""
+          />
+          <div class="flex flex-col gap-5 justify-center">
+            <div>
+              <h1 class="text-[24px] font-medium">${product.service}</h1>
+              <h2 class="text-[18px] text-[#555555]">
+                ${product.description}
+              </h2>
+            </div>
+            <a class="text-[#001A57] font-medium" href="#">${product.More} </a>
+          </div>
+        </div>`;
+
+        serverce.innerHTML+=ProduHtml;
+  })
 };
 
 ShowProduct();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  <div
+//           id="card"
+//           class="flex gap-5 bg-white shadow hover:shadow-lg cursor-pointer rounded-lg transition"
+//         >
+//           <img
+//             src="./image/Service-image/asset 9.jpeg"
+//             class="h-full object-cover"
+//             alt=""
+//           />
+//           <div class="flex flex-col gap-5 justify-center">
+//             <div>
+//               <h1 class="text-[24px] font-medium">Business Services</h1>
+//               <h2 class="text-[18px] text-[#555555]">
+//                 The tiny ship today stille
+//               </h2>
+//             </div>
+//             <a class="text-[#001A57] font-medium" href="#">READ MORE> </a>
+//           </div>
+//         </div>
