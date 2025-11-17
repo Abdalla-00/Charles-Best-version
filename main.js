@@ -102,7 +102,7 @@ const ShowProduct = () => {
                 ${product.description}
               </h2>
             </div>
-            <a class="text-[#001A57] font-medium" href="#">${product.More} </a>
+            <a class="text-[#001A57] font-medium hover:underline" href="#">${product.More} </a>
           </div>
         </div>`;
 
